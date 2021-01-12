@@ -1,0 +1,47 @@
+.title-div {
+    padding-top: 40px;
+    text-align: center;
+    color: #154360;
+  }
+  #title {
+      color: #0E0E0E;
+  }
+  #description {
+      color: black;
+      font-weight: 500;
+  }
+  html, body {
+    min-height: 100%;
+    margin: 0;
+      background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  }
+  .main {
+    background-color: rgb(0,0,0,0.4);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: lighten;
+    height: 100%;
+  }
+  form {
+    background-color: rgb(0,0,0,0.8);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+   form, label {
+      font-size: 20px;
+      color: white;
+    }
+  input {
+      border-radius: 5px;
+  }
+  small {
+      color: rgb(255,255,255,0.8);
+      font-size: 13px;
+  }
+  .form-row {
+      padding-top: 10px;
+  }
+  hr {
+      border-color: white;
+  }

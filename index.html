@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="main">
+		<div class="container title-div">
+		  <h1 id="title">Product Survey Form</h1>
+				  <p id="description" style="font-size: 15px">Thank you for taking part in this Survey</p>
+		</div>
+		<div class="container">
+				  <form id="survey-form"> 
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <label id="name-label" for="name">Customer Name</label><br>
+							  <input class="col-5" type="text" id="name" placeholder="First Name" required>												<input class="col-5" type="text" id="name" placeholder="Last Name" required>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1"> 
+							  <label id="number-label" for="number">Age</label><br>
+							  <input class="col-3" type="number" id="number" min="1" max="100" placeholder="age">
+							  <small class="form-text" id="number">optional</small>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1"> 
+							  <label for="address">Address</label><br>
+							  <input class="col-10" type="text" id="adress">
+							  <small class="form-text" id="address">Address Line 1</small>
+						  </div>
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <input class="col-md-10 col-6 mt-2" type="text" id="address">
+							  <small class="form-text" id="address">City</small>
+						  </div>
+						  <div class="form-group col-11 col-md-5 offset-1 offset-md-0">
+							  <input class="col-md-10 col-6 mt-2" type="text" id="address">
+							  <small class="form-text" id="address">State/Province</small>
+						  </div>
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <input class="col-md-10 col-6 mt-2" type="text" id="address">
+							  <small class="form-text" id="address">Postal/Zip code</small>
+						  </div>
+						  <div class="form-group col-11 col-md-5 offset-1 offset-md-0">
+							  <input class="col-md-10 col-6 mt-2" type="text" id="address">
+							  <small class="form-text" id="address">Country</small>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <label for="telnum">Contact Number</label><br>	
+							  <input class="col-6 col-md-10" type="tel" id="telnum">
+							  <small class="form-text" id="telnum"></small>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <label id="email-label" for="email">Email</label><br>	
+							  <input class="col-6 col-md-10" type="email" id="email" required placeholder="email">
+							  <small class="form-text" id="email"></small>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <label for="dropdown">What is your current role?</label>
+							  <select class="form-control col-6 col-md-10" id="dropdown">
+								  <option>Full time job</option>
+								  <option>Part-time job</option>
+								  <option>Full time student</option>
+								  <option>Prefer not to say</option>
+								  <option>Other</option>
+							  </select>
+						  </div>
+					  </div>
+					  <hr />
+					  <div class="form-row">
+						  <div class="form-group col-11 col-md-5 offset-1">
+							  <label for="product">Select Product to review</label>
+							  <select class="form-control col-6 col-md-10" id="product">
+								  <option>Product 1</option>
+								  <option>Product 2</option>
+								  <option>Product 3</option>
+								  <option>Product 4</option>
+								  <option>Product 5</option>
+							  </select>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <label for="recom">Would you recommend this product to other?</label><br>
+							  <input type="radio" name="recommendation" id="recom" value="Absolutely" checked>										<label for="recom">Absolutely</label><br>
+							  <input type="radio" name="recommendation" id="recom" value="Maybe" >																<label for="recom">Maybe</label><br>
+							  <input type="radio" name="recommendation" id="recom" value="No" >																		<label for="recom">No</label>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <label for="rate">Rate this product on a scale of 1 to 5 (5 being the best)</label><br>
+							  <input type="radio" name="rate" id="rate" value="1">										
+							  <label for="rate">1</label>
+							  <input class="ml-2" type="radio" name="rate" id="rate" value="2" >																	<label for="rate">2</label>
+							  <input class="ml-2" type="radio" name="rate" id="rate" value="3" >																	<label for="rate">3</label>
+							  <input class="ml-2" type="radio" name="rate" id="rate" value="4" >																	<label for="rate">4</label>
+							  <input class="ml-2" type="radio" name="rate" id="rate" value="5" >																	<label for="rate">5</label>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <label for="promo">What are the features that you liked?</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature1">
+							  <label for="promo">feature1</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature2">
+							  <label for="promo">feature2</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature3">
+							  <label for="promo">feature3</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature4">
+							  <label for="promo">feature4</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature5">
+							  <label for="promo">feature5</label><br>
+							  <input type="checkbox" id="promotion" name="promo" value="feature6">
+							  <label for="promo">feature6</label><br>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <label for="feedback">Additional feedback(optional)</label><br>
+							  <textarea id="feedback" name="feedback" class="form-control col-10" rows=5></textarea>
+						  </div>
+					  </div>
+					  <div class="form-row">
+						  <div class="form-group col-11 offset-1">
+							  <input id="submit" type="submit" class="btn btn-primary"></input>
+							  <input id="reset" type="reset" class="btn btn-primary" value"reset"></input>
+						  </div>
+					  </div>
+				  </form>
+		</div>
+	  </div>
+  </body>
+</html>
